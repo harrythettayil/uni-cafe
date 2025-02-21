@@ -1,14 +1,12 @@
 import './App.css'
-import Navbar from './components/navbar/navbar'
+import MenuPage from './pages/MenuPage'
 
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <div className='container'> 
-      </div>
-    </>
+    <div>
+      <MenuPage />
+    </div>
   )
 }
 
