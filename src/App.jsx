@@ -1,13 +1,13 @@
+import { CartProvider } from './context/CartContext';
+import MenuPage from './pages/MenuPage/MenuPage';
 import './App.css'
-import MenuPage from './pages/MenuPage'
 
-function App() {
-
+const App = () => {
   return (
-    <div>
+    <CartProvider>
       <MenuPage />
-    </div>
-  )
-}
+    </CartProvider>
+  );
+};
 
-export default App
+export default App;

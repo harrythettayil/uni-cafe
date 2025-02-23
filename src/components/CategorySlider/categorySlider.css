@@ -1,0 +1,18 @@
+.category-slider {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
+  color: var(--secondary-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active{
+    color:var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}

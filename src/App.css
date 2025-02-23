@@ -136,6 +136,10 @@ html, body {
   height: auto;
 }
 
+.d-flex{
+  display:flex;
+}
+
 /* Media Queries for Responsiveness */
 @media (min-width: 769px) {
   .container {
