@@ -17,12 +17,19 @@ const FoodItem = ({ item }) => {
       <h3 className='item-title'>{item.dish_name}</h3>
       <p className='item-price'>{item.dish_currency} {item.dish_price}</p>
       <p className='item-desc'>{item.dish_description}</p>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <button onClick={() => decrementItem(item.dish_id)}>-</button>
-        <span>{quantity}</span>
-        <button onClick={() => incrementItem(item)}>+</button>
-      </div>
-      {item.addonCat && item.addonCat.length > 0 && (<p className='item-custom'>customizations available</p>)}
+      {item.dish_Availability ? (
+        <div>
+          <div className="btn-container">
+            <button className="btn" onClick={() => decrementItem(item.dish_id)}>-</button>
+            <span>{quantity}</span>
+            <button className="btn" onClick={() => incrementItem(item)}>+</button>
+          </div>
+          
+          {item.addonCat && item.addonCat.length > 0 && (
+            <p className="item-custom">Customizations available</p>
+          )}
+        </div>
+      ) : (<p className="item-custom">Not available</p>) }
       </div>
       <div className='d-flex food-img-container'>
         <p className='item-calorie'>Calories: {item.dish_calories}</p>     

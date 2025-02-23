@@ -31,7 +31,7 @@ html, body {
 /* Typography */
 .heading-1 { font-size: 40px; }
 .heading-2 { font-size: 32px; }
-.heading-3 { font-size: 28px; }
+.heading-3 { font-size: 20px; }
 .heading-4 { font-size: 24px; }
 .heading-5 { font-size: 20px; }
 .heading-6 { font-size: 16px; }
@@ -145,4 +145,5 @@ html, body {
   .container {
     margin: 0 80px;
   }
+  .heading-3 { font-size: 28px; }
 }

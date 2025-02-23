@@ -1,62 +1,93 @@
-.food-item{
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
-    padding: 10px;
-    margin: 10px;
-    border-radius: 4px;
-    justify-content: space-between;
-    align-items: flex-start;
+.food-item {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.food-img-container{
-    gap: 16px;
-    align-items: center;
+.food-img-container {
+  gap: 16px;
+  align-items: center;
 }
 
-.food-img{
-    width: 64px;
+.food-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.item-details{
+.item-details {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.item-title{
+.item-title {
+  font-size: 16px;
+}
+
+.item-price {
+  font-weight: var(--font-weight-semibold);
+}
+
+.item-price {
+  font-size: 14px;
+}
+
+.item-desc,
+.item-calorie,
+.item-custom {
+  font-size: 12px;
+}
+
+.item-custom {
+  color: var(--secondary-color);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  width: fit-content;
+  border-radius: 16px;
+  padding: 2px 16px;
+  margin-bottom: 4px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .food-img {
+    width: 100px;
+  }
+
+  .item-title {
+    font-size: 20px;
+  }
+
+  .item-price {
+    font-size: 18px;
+  }
+
+  .item-desc,
+  .item-calorie,
+  .item-custom {
     font-size: 16px;
+  }
+
+  .food-img {
+    width: 100px;
+    height: 100px;
+  }
 }
-
-.item-price{
-    font-weight: var(--font-weight-semibold);
-}
-
-.item-price{
-    font-size: 14px;
-}
-
-.item-desc,.item-calorie,.item-custom{
-    font-size: 12px;
-}
-
-.item-custom{
-    color: var(--secondary-color)
-}
-
-@media (min-width:768px) {
-    .food-img{
-        width: 100px;
-    }
-
-    .item-title{
-        font-size: 20px;
-    }
-    
-    .item-price{
-        font-size: 18px;
-    }
-    
-    .item-desc,.item-calorie,.item-custom{
-        font-size: 16px;
-    }
-}
-
