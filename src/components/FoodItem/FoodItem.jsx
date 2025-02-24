@@ -8,8 +8,8 @@ const FoodItem = ({ item }) => {
   const cartItem = cart.find((cartItem) => cartItem.dish_id === item.dish_id);
   const quantity = cartItem ? cartItem.quantity : 0;
 
-  console.log('Cart Item:', cartItem); // Debugging: Log the cart item
-  console.log('Quantity:', quantity); // Debugging: Log the quantity
+  // console.log('Cart Item:', cartItem); // Debugging: Log the cart item
+  // console.log('Quantity:', quantity); // Debugging: Log the quantity
 
   return (
     <div className='food-item d-flex'>
